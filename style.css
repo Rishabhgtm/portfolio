@@ -334,7 +334,7 @@ section {
 .project-container-link{
     display: flex;
     justify-content: center;
-    gap: 3rem;  
+    gap: 2rem;  
 }
 .project1, .project2{
     padding: 1.5rem;
@@ -343,13 +343,13 @@ section {
     border: 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
 
 }
 .projecticon{
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
 }
 #contact{
     position: relative;
