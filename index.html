@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="php" href="contacts.php">
+
+</head>
+<body>
+   <nav id="desktop-nav">
+    <div class="logo">RISHABH RAJ GAUTAM</div>
+    <div> <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul></div>
+   </nav>
+   <nav id="hamburger-nav">
+    <div class="logo">RISHABH RAJ GAUTAM</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon"onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-link">
+        <li><a href="#about"onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+   </nav>
+   <section id="profile" >
+    <div class="section-pic-container">
+        <img src="assest/profile-pic.png" alt=" RISHABH PROFILE PIC">
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1">HELLO ,I'M</p>
+        <h1 class="title">Rishabh Raj Gautam</h1>
+        <p class="section_text_p2">I'M A WEB DEVELOPER</p>
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2"
+            onclick="window.open('assest/resume-example.pdf')">
+        Download CV
+    </button>
+    <button 
+    class="btn btn-color-1"
+    onclick="location.href='./#contact'">
+Contact Info
+</button>
+        </div>
+        <div id="socials-container">
+            <img src="assest/linkedin.png" alt="linked profile"
+            class="icon"
+            onclick="Location.href='http://linkedin.com/'"
+            />
+            <img src="assest/github.png" alt="linked profile"
+            class="icon"
+            onclick="Location.href='http://github.com/Rishabhgtm'"
+            />
+        </div>
+   </section>
+<br>
+<br>
+<br>
+<section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section-pic-container1">
+        <img src="assest/about-pic.png" alt="profile-pic" 
+        class="about-pic">
+        </div>
+        <div class="about-detailes-container">
+        <div class="about-container">
+            <div class="detailes-container">
+            <img src="assest/experience.png" alt="experience icon"
+            class="icon"/>
+            <h3>Experience</h3>
+            <p>Fresher <br />Learning Web Development</p>
+            </div>
+            <div class="detailes-container">
+            <img src="assest/education.png" 
+            alt="Education icon"
+            class="icon"/>
+            <h3>Education</h3>
+            <p>Learning Computer Engineering
+            <br />Bachelors Degree in B.A Program</p>
+            </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I Present time learning Computer Engineering in DSEU.<br/>
+                    Complete Bachelors Degree in B.A Program from DU in 2023 year.<br/>
+                    Complete 10th and 12th from CBSE in 2020 year.</p>
+            </div>
+    </div>
+</section>
+<section id="experience">
+    <div class="experience">
+        <H1 class="title">Experience</H1>
+        <div>
+            <br>
+            <div class="experience-container">
+                <h2>Fronend Development </h2>
+                <div class="article-container">
+                    <article>
+                       <img src="assest/checkmark.png" alt="experience-icon"class="icon"/>
+                       <div>
+                        <h3>HTML</h3>
+                        <p>basic</p>
+                       </div>
+                    </article>
+                    <article>
+                       <img src="assest/checkmark.png" alt="experience-icon"class="icon"/>
+                       <div>
+                        <h3>CSS</h3>
+                        <p>basic</p>
+                       </div>
+                    </article>
+                    <article>
+                       <img src="assest/checkmark.png" alt="experience-icon"class="icon"/>
+                       <div>
+                        <h3>Java Script</h3>
+                        <p>basic</p>
+                       </div>
+                    </article>
+                </div>
+        </div>
+            <Div class="project-container">
+            <br>
+            <H1 class="title">Project</H1>
+            </Div>
+            <br>
+            <div class="project-container-link">
+                <div class="project1">
+                    <img src="assest/project-1.png" alt="experience-icon" class="projecticon" />
+                    <h3></h3>
+                    <a href="https://rishabhgtm.github.io/weather-website/">WEATHER-WEBSITE</a>
+                </div>
+                <div class="project2">
+                    <img src="assest/project-2.png" alt="experience-icon" class="projecticon" />
+                    <h3></h3>
+                    <a href="https://rishabhgtm.github.io/NETFLIX/">NETFLIX-CLONE</a>
+                </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="contact">
+        <H1 class="title">Contact</H1>
+        <div class="contact-box">
+        <div class="contact-container">
+            <form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
+   <script src="script.js"></script> 
+</body>
+</html> 
