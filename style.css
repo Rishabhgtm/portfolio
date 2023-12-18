@@ -343,13 +343,13 @@ section {
     border: 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
 
 }
 .projecticon{
-    height: 250px;
-    width: 250px;
+    height: 220px;
+    width: 220px;
 }
 #contact{
     position: relative;
